@@ -23,12 +23,12 @@ export const columns: ColumnDef<Participant>[] = [
         header: "Etternavn"
     },
     {
-        accessorKey: "class",
-        header: "Klasse"
-    },
-    {
         accessorKey: "team",
         header: "Klubb"
+    },
+    {
+        accessorKey: "class",
+        header: "Klasse"
     },
     {
         accessorKey: "ecard",

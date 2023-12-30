@@ -9,8 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "generate-types": "openapi-typescript ../backend/src/main/resources/api.yaml -o ./src/api/schema.d.ts",
-    "openapi-mock": "prism mock ../backend/src/main/resources/api.yaml",
-    "json-server": "json-server --watch ./json-server/db.json --routes ./json-server/routes.json"
+    "openapi-mock": "prism mock --port=3000 ../backend/src/main/resources/api.yaml",
+    "json-server": "json-server --port=3000 --watch ./json-server/db.json --routes ./json-server/routes.json"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.3",
