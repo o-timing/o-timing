@@ -1,12 +1,13 @@
-import { Loper } from "./lopere/columns";
-
 const host = "localhost"
 const port = "3000"
 
-export const fetchAlleLopere: () => Promise<Loper[]> = async () => {
+import {components} from "./schema";
+type Participant = components["schemas"]["Participant"];
+
+export const fetchAllParticipants: () => Promise<Participant[]> = async () => {
     try {
-        const response = await fetch(`http://${host}:${port}/lopere`);
-        const data = await response.json() as Loper[];
+        const response = await fetch(`http://${host}:${port}/participants`);
+        const data = await response.json() as Participant[];
         return data;
     } catch (error) {
         console.error(error);
@@ -14,10 +15,10 @@ export const fetchAlleLopere: () => Promise<Loper[]> = async () => {
     }
 };
 
-export const searchLopere: (searchString: string) => Promise<Loper[]> = async (searchString: string) => {
+export const searchLopere: (searchString: string) => Promise<Participant[]> = async (searchString: string) => {
     try {
-        const response = await fetch(`http://${host}:${port}/lopere?q=${searchString}`);
-        const data = await response.json() as Loper[];
+        const response = await fetch(`http://${host}:${port}/participants?q=${searchString}`);
+        const data = await response.json() as Participant[];
         return data;
     } catch (error) {
         console.error(error);

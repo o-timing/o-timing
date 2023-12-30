@@ -6,51 +6,38 @@ import {Badge} from "@/components/ui/badge"
 import {Dialog, DialogTrigger} from "@/components/ui/dialog"
 import {BrikkenummerDialog} from "@/lopere/BrikkenummerDialog.tsx";
 
-// This type is used to define the shape of our data.
-// You can use a Zod schema here if you want.
-export type Loper = {
-    startnr: number | null,
-    fornavn: string,
-    etternavn: string,
-    klubb: string,
-    brikkenr: string,
-    klasse: string,
-    leiebrikke: boolean,
-    id: number
-}
+import {components} from "../schema";
+type Participant = components["schemas"]["Participant"];
 
-export const columns: ColumnDef<Loper>[] = [
+export const columns: ColumnDef<Participant>[] = [
     {
-        accessorKey: "startnr",
+        accessorKey: "startno",
         header: "Startnummer"
     },
     {
-        accessorKey: "fornavn",
+        accessorKey: "firstname",
         header: "Fornavn"
     },
     {
-        accessorKey: "etternavn",
+        accessorKey: "lastname",
         header: "Etternavn"
     },
     {
-        accessorKey: "klasse",
+        accessorKey: "class",
         header: "Klasse"
     },
     {
-        accessorKey: "klubb",
+        accessorKey: "team",
         header: "Klubb"
     },
     {
-        accessorKey: "brikkenr",
+        accessorKey: "ecard",
         header: () => <div className="text-left">Brikkenummer</div>,
         cell: ({row}) => {
-            const payment = row.original
-            const brikkenr: string = payment.brikkenr
-            const leiebrikke = payment.leiebrikke
-
+            const participant = row.original
             return (
-                <div className="text-left font-medium">{brikkenr}
-                    {leiebrikke &&
+                <div className="text-left font-medium">{participant.ecard}
+                    {participant.rentalEcard &&
                         <Badge className="bg-cyan-100 mx-2" variant="outline">Leiebrikke</Badge>
                     }
                 </div>
@@ -61,7 +48,7 @@ export const columns: ColumnDef<Loper>[] = [
         id: "actions",
         cell: ({row}) => {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const loper = row.original
+            const participant = row.original
 
             return (
                 <Dialog>
@@ -78,7 +65,7 @@ export const columns: ColumnDef<Loper>[] = [
                             </DialogTrigger>
                         </DropdownMenuContent>
                     </DropdownMenu>
-                    <BrikkenummerDialog loper={loper}/>
+                    <BrikkenummerDialog participant={participant}/>
                 </Dialog>
             )
         },

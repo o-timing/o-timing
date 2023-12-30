@@ -1,10 +1,12 @@
 # TODO
 
-- generer typescript typer fra openapi
-- oversette lopere til engelsk
 - ta med loper.id i form
 - se om det finnes en måte å mocke et openapi
 - valider kontinuerlig i brikkeendring-dialog
+
+# Generer typescript schema fra Open-API
+
+    npm run generate-types
 
 # Testdata
 

@@ -1,22 +1,24 @@
 import './index.css';
 import Sok from "@/Sok.tsx";
 import React, {useEffect, useState} from "react";
-import {fetchAlleLopere, searchLopere} from './api';
-import {columns, Loper} from './lopere/columns';
+import {fetchAllParticipants, searchLopere} from './api';
+import {columns} from './lopere/columns';
 import {DataTable} from "@/lopere/data-table.tsx";
 
+import {components} from "./schema";
+
+type Participant = components["schemas"]["Participant"];
+
 function BrikkeendringPage() {
-    const [lopere, setLopere] = useState<Loper[]>([]);
+    const [participants, setParticipants] = useState<Participant[]>([]);
     const [searchString, setSearchString] = useState<string>("");
 
     useEffect(() => {
         (async () => {
             if (searchString === '') {
-                const lopere = await fetchAlleLopere();
-                setLopere(lopere)
+                setParticipants(await fetchAllParticipants())
             } else {
-                const lopere = await searchLopere(searchString);
-                setLopere(lopere);
+                setParticipants(await searchLopere(searchString));
             }
         })()
     }, [searchString]);
@@ -26,7 +28,7 @@ function BrikkeendringPage() {
             <Sok searchString={searchString} setSearchString={setSearchString}/>
 
             <div className="container mx-auto py-10">
-                <DataTable columns={columns} data={lopere}/>
+                <DataTable columns={columns} data={participants}/>
             </div>
         </div>
     )

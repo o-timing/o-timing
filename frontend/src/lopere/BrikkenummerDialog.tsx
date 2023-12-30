@@ -15,11 +15,14 @@ import {
     DialogHeader,
     DialogTitle
 } from "@/components/ui/dialog.tsx";
-import {Loper} from "@/lopere/columns.tsx";
 import {toast} from "sonner"
 
+import {components} from "../schema";
+
+type Participant = components["schemas"]["Participant"];
+
 const formSchema = z.object({
-    brikkenr: z.string()
+    ecard: z.string()
         .min(6)
         .max(7)
         .refine(value => /^\d+$/.test(value),
@@ -27,59 +30,56 @@ const formSchema = z.object({
 })
 
 type Props = {
-    loper: Loper
+    participant: Participant
 }
 
-export function BrikkenummerDialog({loper}: Props) {
+export function BrikkenummerDialog({participant}: Props) {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            brikkenr: loper.brikkenr,
+            ecard: participant.ecard,
         },
     })
 
-    function createOnSubmit(loper: Loper) {
-        return (values: z.infer<typeof formSchema>) => {
-
-            if (loper.brikkenr === values.brikkenr) {
-                toast(
-                    <div>
-                        <div>Allerede lagret</div>
-                        <div>{loper.fornavn} {loper.etternavn} / {loper.klubb} / {loper.klasse}</div>
-                        <div>med brikkenummer {values.brikkenr}</div>
-                    </div>)
-            } else {
-                toast(
-                    <div>
-                        <div>Lagret</div>
-                        <div>{loper.fornavn} {loper.etternavn} / {loper.klubb} / {loper.klasse}</div>
-                        <div>med brikkenummer {values.brikkenr}</div>
-                    </div>)
-                // TODO lagre
-            }
-
-            console.log(values)
+    function onSubmit(values: z.infer<typeof formSchema>) {
+        if (participant.ecard === values.ecard) {
+            toast(
+                <div>
+                    <div>Allerede lagret</div>
+                    <div>{participant.firstname} {participant.lastname} / {participant.team} / {participant.class}</div>
+                    <div>med brikkenummer {values.ecard}</div>
+                </div>)
+        } else {
+            toast(
+                <div>
+                    <div>Lagret</div>
+                    <div>{participant.firstname} {participant.lastname} / {participant.team} / {participant.class}</div>
+                    <div>med brikkenummer {values.ecard}</div>
+                </div>)
+            // TODO lagre
         }
+
+        console.log(values)
     }
 
     return (
         <DialogContent>
             <Form {...form}>
-                <form onSubmit={form.handleSubmit(createOnSubmit(loper))} className="space-y-8">
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                     <DialogHeader>
                         <DialogTitle>Endre brikkenummer</DialogTitle>
                         <DialogDescription>
                             <div className="grid grid-cols-3 gap-4">
                                 <div>Startnummer</div>
-                                <div className="col-span-2">{loper.startnr}</div>
+                                <div className="col-span-2">{participant.startno}</div>
                                 <div>Fornavn</div>
-                                <div className="col-span-2">{loper.fornavn}</div>
+                                <div className="col-span-2">{participant.firstname}</div>
                                 <div>Etternavn</div>
-                                <div className="col-span-2">{loper.etternavn}</div>
+                                <div className="col-span-2">{participant.lastname}</div>
                                 <div>Klasse</div>
-                                <div className="col-span-2">{loper.klasse}</div>
+                                <div className="col-span-2">{participant.class}</div>
                                 <div>Klubb</div>
-                                <div className="col-span-2">{loper.klubb}</div>
+                                <div className="col-span-2">{participant.team}</div>
                             </div>
                         </DialogDescription>
                     </DialogHeader>
