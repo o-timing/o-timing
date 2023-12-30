@@ -1,0 +1,157 @@
+openapi: "3.0.0"
+info:
+  version: 0.0.1
+  title: Participant Repo
+servers:
+  - url: http://localhost:8080
+paths:
+  /v1/participants:
+    get:
+      summary: List of participants.
+      description: Returns the list of all participants
+      operationId: get_participants
+      tags:
+        - Participants
+      responses:
+        '200':
+          description: List of all participants
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  "$ref": '#/components/schemas/Participant'
+    post:
+      summary: Creates a Participant.
+      description: Creates a participant using given fields.
+      operationId: create_participant
+      tags:
+        - Participants
+      requestBody:
+        description: Required information to create a participant
+        required: true
+        content:
+          application/json:
+            schema:
+              "$ref": '#/components/schemas/ParticipantBody'
+      responses:
+        '200':
+          description: Created participant
+          content:
+            application/json:
+              schema:
+                "$ref": '#/components/schemas/Participant'
+        '400':
+          description: Request was wrong. Some fields in body might be missing or invalid.
+          content:
+            application/json:
+              schema:
+                "$ref": '#/components/schemas/Error'
+  /v1/participants/{id}:
+    get:
+      summary: Particular participant info
+      description: All the information on a single participant
+      operationId: get_participant
+      parameters:
+        - name: id
+          schema:
+            type: integer
+          required: true
+          in: path
+      tags:
+        - Participant
+      responses:
+        '200':
+          description: A participant object
+          content:
+            application/json:
+              schema:
+                "$ref": '#/components/schemas/Participant'
+        '404':
+          description: Provided participant ID does not correspond to any object in the DB
+          content:
+            application/json:
+              schema:
+                "$ref": '#/components/schemas/Error'
+components:
+  parameters:
+    slug:
+      in: path
+      name: slug
+      schema:
+        type: string
+      required: true
+      description: Human readable id
+
+  schemas:
+    Participant:
+      required:
+        - firstname
+        - lastname
+        - class
+        - team
+        - rentalEcard
+      properties:
+        id:
+          type: integer
+          description: "Database id of the participant"
+        firstname:
+          type: string
+        lastname:
+          type: string
+        startno:
+          type: integer
+        ecard:
+          type: string
+        class:
+          type: string
+        team:
+          type: string
+        rentalEcard:
+          type: boolean
+      example:
+        id: 3986238010
+        firstname: "Alfred"
+        lastname: "Teig"
+        startno: 435,
+        ecard: "4530167"
+        class: "H15-16"
+        team: "Nydalen SK"
+        rentalEcard: false
+    ParticipantBody:
+      required:
+        - firstname
+        - lastname
+        - class
+        - team
+        - rentalEcard
+      properties:
+        firstname:
+          type: string
+        lastname:
+          type: string
+        startno:
+          type: integer
+        ecard:
+          type: string
+        class:
+          type: string
+        team:
+          type: string
+      example:
+        firstname: "Christine"
+        lastname: "Teig"
+        startno: 345,
+        ecard: "4430167"
+        class: "D50"
+        team: "Nydalen SK"
+        rentalEcard: false
+    Error:
+      required:
+        - msg
+        - errorCode
+      properties:
+        msg:
+          type: string
+        errorCode:
+          type: integer
