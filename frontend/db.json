@@ -1,0 +1,594 @@
+{
+  "lopere": [
+    {
+      "id": 1,
+      "fornavn": "Tom",
+      "etternavn": "Kristensen                      ",
+      "startnr": null,
+      "brikkenr": "530167",
+      "klasse": "MellomA",
+      "klubb": "Larvik OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 2,
+      "fornavn": "Tom",
+      "etternavn": "Saga                            ",
+      "startnr": null,
+      "brikkenr": "518759",
+      "klasse": "MellomA",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 3,
+      "fornavn": "Steinar",
+      "etternavn": "Lande                           ",
+      "startnr": null,
+      "brikkenr": "227677",
+      "klasse": "Lang A",
+      "klubb": "Bø OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 4,
+      "fornavn": "Anine",
+      "etternavn": "Kjørholt Lie                    ",
+      "startnr": null,
+      "brikkenr": "510696",
+      "klasse": "Lang A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 5,
+      "fornavn": "Bjørn",
+      "etternavn": "Lie                             ",
+      "startnr": null,
+      "brikkenr": "517497",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 6,
+      "fornavn": "Hanne",
+      "etternavn": "Herum                           ",
+      "startnr": null,
+      "brikkenr": "510526",
+      "klasse": "Kort A",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 7,
+      "fornavn": "Petter",
+      "etternavn": "Løe                             ",
+      "startnr": null,
+      "brikkenr": "511451",
+      "klasse": "MellomA",
+      "klubb": "Notodden OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 8,
+      "fornavn": "Ida Vår Kierulf",
+      "etternavn": "Meyer                           ",
+      "startnr": null,
+      "brikkenr": "531067",
+      "klasse": "MellomA",
+      "klubb": "Larvik OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 9,
+      "fornavn": "Per Henrik",
+      "etternavn": "Zagar                           ",
+      "startnr": null,
+      "brikkenr": "519951",
+      "klasse": "MellomA",
+      "klubb": "Larvik OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 10,
+      "fornavn": "Jørn",
+      "etternavn": "Myrland                         ",
+      "startnr": null,
+      "brikkenr": "517487",
+      "klasse": "MellomA",
+      "klubb": "Notodden OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 11,
+      "fornavn": "Cathrine",
+      "etternavn": "Sogn                            ",
+      "startnr": null,
+      "brikkenr": "511289",
+      "klasse": "MellomA",
+      "klubb": "Notodden OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 12,
+      "fornavn": "Jesper",
+      "etternavn": "Flogstad                        ",
+      "startnr": null,
+      "brikkenr": "521804",
+      "klasse": "MellomA",
+      "klubb": "IL Hauken",
+      "leiebrikke": false
+    },
+    {
+      "id": 13,
+      "fornavn": "Arne",
+      "etternavn": "Næss Johnsen                    ",
+      "startnr": null,
+      "brikkenr": "514997",
+      "klasse": "Kort A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 14,
+      "fornavn": "Harald",
+      "etternavn": "Omland                          ",
+      "startnr": null,
+      "brikkenr": "520943",
+      "klasse": "MellomA",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 15,
+      "fornavn": "Morten",
+      "etternavn": "Andresen                        ",
+      "startnr": null,
+      "brikkenr": "530854",
+      "klasse": "MellomA",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 16,
+      "fornavn": "Jorunn Brun",
+      "etternavn": "Saga                            ",
+      "startnr": null,
+      "brikkenr": "518736",
+      "klasse": "Kort A",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 17,
+      "fornavn": "Arve",
+      "etternavn": "Glittum                         ",
+      "startnr": null,
+      "brikkenr": "525318",
+      "klasse": "MellomA",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 18,
+      "fornavn": "Hans-Petter",
+      "etternavn": "Eikedalen                       ",
+      "startnr": null,
+      "brikkenr": "518331",
+      "klasse": "Lang A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 19,
+      "fornavn": "Ragnar",
+      "etternavn": "Hillestad                       ",
+      "startnr": null,
+      "brikkenr": "511862",
+      "klasse": "C-løype",
+      "klubb": "Lardal OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 20,
+      "fornavn": "Jiri",
+      "etternavn": "Urvalek                         ",
+      "startnr": null,
+      "brikkenr": "252043",
+      "klasse": "Kort A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 21,
+      "fornavn": "Ole",
+      "etternavn": "Flaatten                        ",
+      "startnr": null,
+      "brikkenr": "520029",
+      "klasse": "Lang A",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 22,
+      "fornavn": "Helge",
+      "etternavn": "Gisholt                         ",
+      "startnr": null,
+      "brikkenr": "238122",
+      "klasse": "Lang A",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 23,
+      "fornavn": "Jan",
+      "etternavn": "Glittum                         ",
+      "startnr": null,
+      "brikkenr": "529170",
+      "klasse": "MellomA",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 24,
+      "fornavn": "Odd",
+      "etternavn": "Eide-Fredriksen                 ",
+      "startnr": null,
+      "brikkenr": "500057",
+      "klasse": "Kort A",
+      "klubb": "Kamp/Vestheim IF",
+      "leiebrikke": false
+    },
+    {
+      "id": 25,
+      "fornavn": "Hilde",
+      "etternavn": "Vassend                         ",
+      "startnr": null,
+      "brikkenr": "517403",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 26,
+      "fornavn": "Uku-Laur",
+      "etternavn": "Tali                            ",
+      "startnr": null,
+      "brikkenr": "517653",
+      "klasse": "Lang A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 27,
+      "fornavn": "Kay",
+      "etternavn": "Jørgensen                       ",
+      "startnr": null,
+      "brikkenr": "524676",
+      "klasse": "Kort A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 28,
+      "fornavn": "Dag",
+      "etternavn": "Ausen                           ",
+      "startnr": null,
+      "brikkenr": "265928",
+      "klasse": "Lang A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 29,
+      "fornavn": "Jan",
+      "etternavn": "Gatevold                        ",
+      "startnr": null,
+      "brikkenr": "257802",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 30,
+      "fornavn": "Gaute",
+      "etternavn": "Nysæter                         ",
+      "startnr": null,
+      "brikkenr": "529178",
+      "klasse": "Lang A",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 31,
+      "fornavn": "Øyvind",
+      "etternavn": "Hylleseth                       ",
+      "startnr": null,
+      "brikkenr": "248247",
+      "klasse": "MellomA",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 32,
+      "fornavn": "Atle",
+      "etternavn": "Remme                           ",
+      "startnr": null,
+      "brikkenr": "260409",
+      "klasse": "Kort A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 33,
+      "fornavn": "Lars Ole",
+      "etternavn": "Thunold                         ",
+      "startnr": null,
+      "brikkenr": "530873",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 34,
+      "fornavn": "Tonny",
+      "etternavn": "Lindquist                       ",
+      "startnr": null,
+      "brikkenr": "504612",
+      "klasse": "Kort A",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 35,
+      "fornavn": "Inger Marie",
+      "etternavn": "Johansson                       ",
+      "startnr": null,
+      "brikkenr": "504687",
+      "klasse": "C-løype",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 36,
+      "fornavn": "Ole",
+      "etternavn": "Johansson                       ",
+      "startnr": null,
+      "brikkenr": "523723",
+      "klasse": "Kort A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 37,
+      "fornavn": "Inge",
+      "etternavn": "Glittum                         ",
+      "startnr": null,
+      "brikkenr": "510625",
+      "klasse": "MellomA",
+      "klubb": "OK Skeidi",
+      "leiebrikke": false
+    },
+    {
+      "id": 38,
+      "fornavn": "Sveinung",
+      "etternavn": "Rekaa                           ",
+      "startnr": null,
+      "brikkenr": "518315",
+      "klasse": "MellomA",
+      "klubb": "Notodden OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 39,
+      "fornavn": "Jørn",
+      "etternavn": "Sundby                          ",
+      "startnr": null,
+      "brikkenr": "504453",
+      "klasse": "Lang A",
+      "klubb": "Larvik OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 40,
+      "fornavn": "Kerstin Elisabeth",
+      "etternavn": "Aas                             ",
+      "startnr": null,
+      "brikkenr": "519427",
+      "klasse": "Kort A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 41,
+      "fornavn": "Eilef",
+      "etternavn": "Landsverk                       ",
+      "startnr": null,
+      "brikkenr": "257739",
+      "klasse": "Kort A",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 42,
+      "fornavn": "Thore",
+      "etternavn": "Kornmo                          ",
+      "startnr": null,
+      "brikkenr": "524452",
+      "klasse": "Lang A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 43,
+      "fornavn": "Mathias",
+      "etternavn": "Sundby                          ",
+      "startnr": null,
+      "brikkenr": "525043",
+      "klasse": "MellomA",
+      "klubb": "Larvik OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 44,
+      "fornavn": "Magnus Aarhus",
+      "etternavn": "Kinn                            ",
+      "startnr": null,
+      "brikkenr": "525376",
+      "klasse": "Lang A",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 45,
+      "fornavn": "Håkon Aarhus",
+      "etternavn": "Kinn                            ",
+      "startnr": null,
+      "brikkenr": "524591",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 46,
+      "fornavn": "Ingrid Aarhus",
+      "etternavn": "Kinn                            ",
+      "startnr": null,
+      "brikkenr": "525377",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 47,
+      "fornavn": "Kari Aarhus",
+      "etternavn": "Kinn                            ",
+      "startnr": null,
+      "brikkenr": "524593",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 48,
+      "fornavn": "Dagfinn",
+      "etternavn": "Torpe                           ",
+      "startnr": null,
+      "brikkenr": "222595",
+      "klasse": "MellomA",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 49,
+      "fornavn": "Jørn",
+      "etternavn": "Langerud                        ",
+      "startnr": null,
+      "brikkenr": "223781",
+      "klasse": "C-løype",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 50,
+      "fornavn": "Bjørn Ivar",
+      "etternavn": "Langerud                        ",
+      "startnr": null,
+      "brikkenr": "262571",
+      "klasse": "C-løype",
+      "klubb": "Porsgrunn OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 51,
+      "fornavn": "Anna",
+      "etternavn": "Gjestrud                        ",
+      "startnr": null,
+      "brikkenr": "523691",
+      "klasse": "MellomA",
+      "klubb": "Notodden OL",
+      "leiebrikke": false
+    },
+    {
+      "id": 52,
+      "fornavn": "Ulric",
+      "etternavn": "Björck                          ",
+      "startnr": null,
+      "brikkenr": "246926",
+      "klasse": "MellomA",
+      "klubb": "Larvik OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 53,
+      "fornavn": "Veronica Holtedahl",
+      "etternavn": "Simonsen                        ",
+      "startnr": null,
+      "brikkenr": "233645",
+      "klasse": "MellomA",
+      "klubb": "Sandefjord OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 54,
+      "fornavn": "Elling",
+      "etternavn": "Aakre                           ",
+      "startnr": null,
+      "brikkenr": "236004",
+      "klasse": "Kort A",
+      "klubb": "Andebu IL",
+      "leiebrikke": false
+    },
+    {
+      "id": 55,
+      "fornavn": "Knut",
+      "etternavn": "Gjone                           ",
+      "startnr": null,
+      "brikkenr": "223921",
+      "klasse": "Kort A",
+      "klubb": "Sandefjord OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 56,
+      "fornavn": "Daniella",
+      "etternavn": "Gjone                           ",
+      "startnr": null,
+      "brikkenr": "511849",
+      "klasse": "MellomA",
+      "klubb": "Sandefjord OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 57,
+      "fornavn": "Sigurd",
+      "etternavn": "Holtskog                        ",
+      "startnr": null,
+      "brikkenr": "257773",
+      "klasse": "C-løype",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 58,
+      "fornavn": "Juliette",
+      "etternavn": "Holtskog-Feremans               ",
+      "startnr": null,
+      "brikkenr": "257772",
+      "klasse": "Lang A",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    },
+    {
+      "id": 59,
+      "fornavn": "Pauline",
+      "etternavn": "Holtskog-Feremans               ",
+      "startnr": null,
+      "brikkenr": "211854",
+      "klasse": "C-løype",
+      "klubb": "Skien OK",
+      "leiebrikke": false
+    }
+  ]
+}
