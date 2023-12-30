@@ -101,10 +101,6 @@
 						<compilerPlugins>
 							<plugin>spring</plugin>
 						</compilerPlugins>
-						<sourceDirs>
-							<sourceDir>backend/src/main/java</sourceDir>
-							<sourceDir>src/main/kotlin</sourceDir>
-						</sourceDirs>
 					</configuration>
 				</execution>
 				<execution>
@@ -115,7 +111,6 @@
 					</goals>
 					<configuration>
 						<sourceDirs>
-							<sourceDir>backend/src/test/java</sourceDir>
 							<sourceDir>src/test/kotlin</sourceDir>
 						</sourceDirs>
 					</configuration>
