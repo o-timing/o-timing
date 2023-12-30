@@ -1,9 +1,11 @@
 # TODO
 
+- bruke paths fra schema i api.ts
+- bruke acceptsheader fra schema
 - ta med loper.id i form
-- se om det finnes en måte å mocke et openapi
 - valider kontinuerlig i brikkeendring-dialog
-
+- legge til sortering i resultat-tabell
+- 
 # Generer typescript schema fra Open-API
 
     npm run generate-types
