@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/dialog.tsx";
 import {toast} from "sonner"
 
-import {components} from "../schema";
+import {components} from "../api/schema";
 
 type Participant = components["schemas"]["Participant"];
 

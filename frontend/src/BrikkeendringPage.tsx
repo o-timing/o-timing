@@ -1,11 +1,11 @@
 import './index.css';
 import Sok from "@/Sok.tsx";
 import {useEffect, useState} from "react";
-import {fetchAllParticipants, searchLopere} from './api';
+import {fetchAllParticipants, searchLopere} from './api/api';
 import {columns} from './lopere/columns';
 import {DataTable} from "@/lopere/data-table.tsx";
 
-import {components} from "./schema";
+import {components} from "./api/schema";
 
 type Participant = components["schemas"]["Participant"];
 

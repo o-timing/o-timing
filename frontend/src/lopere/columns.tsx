@@ -6,7 +6,7 @@ import {Badge} from "@/components/ui/badge"
 import {Dialog, DialogTrigger} from "@/components/ui/dialog"
 import {BrikkenummerDialog} from "@/lopere/BrikkenummerDialog.tsx";
 
-import {components} from "../schema";
+import {components} from "../api/schema";
 type Participant = components["schemas"]["Participant"];
 
 export const columns: ColumnDef<Participant>[] = [
