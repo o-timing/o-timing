@@ -86,7 +86,7 @@ export function BrikkenummerDialog({participant}: Props) {
 
                     <FormField
                         control={form.control}
-                        name="brikkenr"
+                        name="ecard"
                         render={({field}) => {
                             return (
                                 <FormItem>

@@ -1,6 +1,6 @@
 import './index.css';
 import Sok from "@/Sok.tsx";
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import {fetchAllParticipants, searchLopere} from './api';
 import {columns} from './lopere/columns';
 import {DataTable} from "@/lopere/data-table.tsx";
