@@ -41,16 +41,22 @@ export function BrikkenummerDialog({loper}: Props) {
     function createOnSubmit(loper: Loper) {
         return (values: z.infer<typeof formSchema>) => {
 
-            // TODO: sjekk om brikkenr er endret.
-            // Hvis det ikke er endret så gi en beskjed om at det ikke er endret og ikke lagre
-            // Hvis brikkenr er endret så gi en beskjed om hva det er endret til og lagre
-
-            toast(
-                <div>
-                    <div>Lagret</div>
-                    <div>{loper.fornavn} {loper.etternavn} / {loper.klubb} / {loper.klasse}</div>
-                    <div>med brikkenummer {values.brikkenr}</div>
-                </div>)
+            if (loper.brikkenr === values.brikkenr) {
+                toast(
+                    <div>
+                        <div>Allerede lagret</div>
+                        <div>{loper.fornavn} {loper.etternavn} / {loper.klubb} / {loper.klasse}</div>
+                        <div>med brikkenummer {values.brikkenr}</div>
+                    </div>)
+            } else {
+                toast(
+                    <div>
+                        <div>Lagret</div>
+                        <div>{loper.fornavn} {loper.etternavn} / {loper.klubb} / {loper.klasse}</div>
+                        <div>med brikkenummer {values.brikkenr}</div>
+                    </div>)
+                // TODO lagre
+            }
 
             console.log(values)
         }

@@ -1,11 +1,10 @@
 # TODO
 
-- merge inn i eksisterende repo
-- gi beskjed om at brikke ikke er endret
-- ta med loper.id i form
-- forstå hvordan zod virker
+- generer typescript typer fra openapi
 - oversette lopere til engelsk
+- ta med loper.id i form
 - se om det finnes en måte å mocke et openapi
+- valider kontinuerlig i brikkeendring-dialog
 
 # Testdata
 
