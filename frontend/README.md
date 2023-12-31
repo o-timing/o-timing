@@ -1,9 +1,7 @@
 # TODO
 
-- bruke openapi-typescript-fetch
 - ta med participant.id i form
 - valider kontinuerlig i brikkeendring-dialog
-- legge til sortering i resultat-tabell
 - logo som fav.icon
 - debounce funksjon slik at ikke søket hamrer på databasen
 - bedre mocking vha prism

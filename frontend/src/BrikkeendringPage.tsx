@@ -17,6 +17,8 @@ function BrikkeendringPage() {
         (async () => {
             if (searchString === '') {
                 const {data: participants} = await fetchAllParticipants();
+
+                participants.sort((a, b) => (a.firstname, a.lastname).localeCompare((b.firstname, b.lastname)))
                 setParticipants(participants)
             } else {
                 setParticipants(await searchLopere(searchString));
