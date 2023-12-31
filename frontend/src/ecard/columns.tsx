@@ -4,7 +4,7 @@ import {DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger
 import {MoreHorizontal} from "lucide-react"
 import {Badge} from "@/components/ui/badge"
 import {Dialog, DialogTrigger} from "@/components/ui/dialog"
-import {BrikkenummerDialog} from "@/lopere/BrikkenummerDialog.tsx";
+import {ChangeEcardDialog} from "@/ecard/ChangeEcardDialog.tsx";
 
 import {components} from "../api/schema";
 type Participant = components["schemas"]["Participant"];
@@ -65,7 +65,7 @@ export const columns: ColumnDef<Participant>[] = [
                             </DialogTrigger>
                         </DropdownMenuContent>
                     </DropdownMenu>
-                    <BrikkenummerDialog participant={participant}/>
+                    <ChangeEcardDialog participant={participant}/>
                 </Dialog>
             )
         },

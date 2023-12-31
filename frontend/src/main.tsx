@@ -2,11 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import {Toaster} from "@/components/ui/sonner"
-import BrikkeendringPage from "@/BrikkeendringPage.tsx";
+import ChangeEcardPage from "@/ChangeEcardPage.tsx";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-      <BrikkeendringPage />
+      <ChangeEcardPage />
       <Toaster />
   </React.StrictMode>,
 )

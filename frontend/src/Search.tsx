@@ -5,7 +5,7 @@ type Props = {
     setSearchString: (s: string) => void
 }
 
-function Sok({searchString, setSearchString}: Props){
+function Search({searchString, setSearchString}: Props){
     return (
         <div className="p-8">
             <div className="max-w-2xl mx-auto">
@@ -41,4 +41,4 @@ function Sok({searchString, setSearchString}: Props){
     )
 }
 
-export default Sok;
+export default Search;

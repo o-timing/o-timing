@@ -33,7 +33,7 @@ type Props = {
     participant: Participant
 }
 
-export function BrikkenummerDialog({participant}: Props) {
+export function ChangeEcardDialog({participant}: Props) {
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {

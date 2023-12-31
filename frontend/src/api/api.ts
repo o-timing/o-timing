@@ -6,6 +6,7 @@ import {components, paths} from "./schema";
 
 type Participant = components["schemas"]["Participant"];
 
+// @ts-ignore
 const logger: Middleware = async (url, init, next) => {
     console.log(`fetching ${url}`)
     const response = await next(url, init)
@@ -30,7 +31,7 @@ export const fetchAllParticipants = fetcher.path('/v1/participants').method('get
 
 export const searchLopere: (searchString: string) => Promise<Participant[]> = async (searchString: string) => {
     try {
-        const response = await fetch(`http://${host}:${port}/participants?q=${searchString}`);
+        const response = await fetch(`http://${import.meta.env.VITE_BACKEND_HOST}:${import.meta.env.VITE_BACKEND_PORT}?q=${searchString}`);
         const data = await response.json() as Participant[];
         return data;
     } catch (error) {
