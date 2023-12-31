@@ -1,9 +1,8 @@
 import 'whatwg-fetch'
 
-import { Fetcher } from 'openapi-typescript-fetch'
+import {Fetcher, Middleware} from 'openapi-typescript-fetch'
 
 import {components, paths} from "./schema";
-import { Middleware } from 'openapi-typescript-fetch'
 
 type Participant = components["schemas"]["Participant"];
 
@@ -14,20 +13,17 @@ const logger: Middleware = async (url, init, next) => {
     return response
 }
 
-const host = "localhost"
-const port = "3000"
-
 const fetcher = Fetcher.for<paths>()
 
 // global configuration
 fetcher.configure({
-    baseUrl: `http://${host}:${port}`,
-    // init: {
-    //     headers: {
-    //         ...
-    //     },
-    // },
-    use: [logger] // middlewares
+    baseUrl: `http://${import.meta.env.VITE_BACKEND_HOST}:${import.meta.env.VITE_BACKEND_PORT}`,
+    init: {
+        headers: {
+            "Accept": "application/json"
+        },
+    },
+    // use: [logger] // middlewares
 })
 
 export const fetchAllParticipants = fetcher.path('/v1/participants').method('get').create()

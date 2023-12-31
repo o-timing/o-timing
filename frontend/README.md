@@ -1,10 +1,24 @@
 # TODO
 
-- ta med participant.id i form
+- put ved lagring
+  - ta med participant.id i form
+- oversette filnavn og katalognavn til engelsk
+- gjøre header i tabell sticky
+- NSK logo øverst til venstre
+- breadcrumb i header?
+    - f.eks. "Sjusjørennet spring / brikkeendring"  
 - valider kontinuerlig i brikkeendring-dialog
 - logo som fav.icon
 - debounce funksjon slik at ikke søket hamrer på databasen
 - bedre mocking vha prism
+- legg på footer
+    - logo 
+    - github lenke
+    - lisens (APGL?)
+- dokumentasjon
+    - hvordan man setter opp backup av sqlserver
+    - hvordan man gjør restore av en backup
+    - hvordan man setter opp google drive
 
 # Generer typescript schema fra Open-API
 
