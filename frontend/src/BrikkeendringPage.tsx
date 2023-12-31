@@ -16,7 +16,8 @@ function BrikkeendringPage() {
     useEffect(() => {
         (async () => {
             if (searchString === '') {
-                setParticipants(await fetchAllParticipants())
+                const {data: participants} = await fetchAllParticipants();
+                setParticipants(participants)
             } else {
                 setParticipants(await searchLopere(searchString));
             }

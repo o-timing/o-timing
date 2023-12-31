@@ -3,4 +3,5 @@
 
 docker exec -it etiming-database-sqlserver-1 /opt/mssql-tools/bin/sqlcmd -S localhost \
    -U SA -P '<YourStrong!Passw0rd>' \
-   -Q 'RESTORE FILELISTONLY FROM DISK = "/backup.bak"'
+   -s ";" \
+   -Q 'RESTORE FILELISTONLY FROM DISK = "/backup.bak"' | tail -n +3 | grep ";" | cut -d';' -f1,2

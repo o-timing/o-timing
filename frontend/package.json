@@ -9,7 +9,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "generate-types": "openapi-typescript ../backend/src/main/resources/api.yaml -o ./src/api/schema.d.ts",
-    "openapi-mock": "prism mock --port=3000 ../backend/src/main/resources/api.yaml",
+    "openapi-mock": "prism mock -d --port=3000 ../backend/src/main/resources/api.yaml",
     "json-server": "json-server --port=3000 --watch ./json-server/db.json --routes ./json-server/routes.json"
   },
   "dependencies": {
@@ -23,7 +23,7 @@
     "clsx": "^2.0.0",
     "lucide-react": "^0.303.0",
     "next-themes": "^0.2.1",
-    "openapi-fetch": "^0.8.2",
+    "openapi-typescript-fetch": "^1.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.2",
