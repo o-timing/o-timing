@@ -1,11 +1,11 @@
-import './index.css';
-import Search from "@/Search.tsx";
+import '../index.css';
+import Search from "./Search";
 import {useEffect, useState} from "react";
-import {fetchAllParticipants, searchLopere} from './api/api';
+import {fetchAllParticipants, searchLopere} from '../api/api';
 import {columns} from '@/ecard/columns';
 import {DataTable} from "@/ecard/data-table.tsx";
 
-import {components} from "./api/schema";
+import {components} from "../api/schema";
 
 type Participant = components["schemas"]["Participant"];
 
