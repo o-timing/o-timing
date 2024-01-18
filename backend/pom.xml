@@ -138,7 +138,7 @@
 							<inputSpec>${project.basedir}/src/main/resources/api.yaml</inputSpec>
 							<generatorName>kotlin</generatorName>
 							<configOptions>
-								<sourceFolder>src/gen/java/main</sourceFolder>
+								<sourceFolder>src/main/gen</sourceFolder>
 							</configOptions>
 						</configuration>
 					</execution>
